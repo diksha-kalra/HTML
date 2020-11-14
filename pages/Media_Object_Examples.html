@@ -1,0 +1,58 @@
+<!doctype html>
+<title>Example</title>
+<style>
+    .media {
+        display: flex;
+        align-items: flex-start;
+        background: lightgray;
+        padding: 1em;
+        border-radius: 10px;
+        max-width: 50em;
+        border: 1px solid;
+    }
+
+    .outside-media {
+        display: flex;
+        background: lightcyan;
+        padding: 1em;
+        border-radius: 3px;
+    }
+
+    .media-object {
+        margin-right: 10px;
+        padding: 10px;
+        border: 10px black;
+    }
+
+    .media-body {
+        flex: 1;
+        border: 10px black;
+    }
+
+    .media-heading {
+        margin: 0 0 .5em;
+        text-decoration: solid;
+    }
+</style>
+<div class="outside-media">
+    <div class="media">
+        <img class="media-object" src="../assets/plant_5.jpg" alt="Sample photo">
+        <div class="media-body">
+            <h3 class="media-heading">Ornamental Plants</h3>
+            <p>Ornamental plants are plants that are grown for decorative purposes in gardens and landscape design
+                projects, as houseplants, cut flowers and specimen display.
+                The cultivation of ornamental plants is called floriculture, which forms a major branch of horticulture.
+            </p>
+
+            <div class="media">
+                <img class="media-object" src="../assets/plant_9.jpg" alt="Sample photo">
+                <div class="media-body">
+                    <h3 class="media-heading">OutDoor Plant</h3>
+                    <p>Popular plants for outdoor gardens include ornamental trees and shrubs,
+                        vines, vegetables and herbs, perennial flowers (flowers that return for three or more years) and
+                        annual flowers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

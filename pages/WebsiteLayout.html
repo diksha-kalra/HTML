@@ -1,0 +1,130 @@
+<!doctype html>
+<title>Example</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: row;
+        margin: 2;
+    }
+
+    .col-1 {
+        background: lightcoral;
+        flex: 2;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .col-2 {
+        display: flex;
+        flex-direction: column;
+        background: lightblue;
+        flex: 10;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .content>article {
+        flex: 5;
+        min-height: 60vh;
+    }
+
+    .content>aside {
+        background: lightcoral;
+        flex: 0.5;
+        text-align: center;
+    }
+
+    .mainContentItem {
+        text-align: center;
+        background: lightblue;
+    }
+
+    article {
+        padding: 2px;
+        margin: 7px;
+        background: rgb(101, 101, 177);
+    }
+
+    header {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: lightseagreen;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: lightseagreen;
+        padding: 10px;
+    }
+
+    article,
+    nav,
+    aside {
+        padding: 5px;
+    }
+
+    .mainContentItem {
+        flex: 3 0px;
+    }
+</style>
+
+<body>
+    <nav class="col-1">Navigation</nav>
+    <div class="col-2">
+        <header>Header</header>
+        <main class="content">
+            <section class="mainContentItem">
+                <article>
+                    <h2>How To Overcome Negative Thoughts</h2>
+                    <p>You can’t stop negative thoughts from popping into your head,
+                        but you can choose to stop letting them control you and your life.
+                    </p>
+                    <p>Some of us are more prone to negative thoughts. They start out subtle and quiet,
+                        a small voice in the background of your life, until suddenly they’re shouting on
+                        you that you’re not good enough.They shout so loud and so often you think
+                        it’s your own voice and you start to agree.
+                    </p>
+                </article>
+                <article>
+                    <h2>Continue Reading..</h2>
+                    <p>You can’t always choose your thoughts. Sometimes those negative thoughts will pop into
+                        your head unbidden, and that’s okay. The important thing is you recognize that it’s happening
+                        and try
+                        to breathe out that negative energy, letting it flow through you, and turn your focus
+                        purposefully to more
+                        empowering thoughts and intentions.</p>
+                </article>
+                <article>
+                    <h2>What to Do</h2>
+                    <p>Now I start every morning listing off at least ten positive statements to try and overcome
+                        and prevent the negative thoughts before they even begin. And if they do start to creep in
+                        there, which happens,
+                        I do all the many things I know can help, like going for a walk, having good posture,
+                        using breathing techniques, stretching, and focusing on all the things for which I’m grateful.
+                    </p>
+                    <p>You don’t have to let your negative thoughts take over.</p>
+
+                    <p>It’s not easy, especially when they’ve become such a habit, but the good news is you can make new
+                        habits, ones that help you be a happier, healthier person overall.</p>
+                </article>
+            </section>
+            <aside>Aside</aside>
+        </main>
+        <footer>Footer</footer>
+    </div>
+</body>

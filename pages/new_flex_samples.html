@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Flex Page</title>
+        <style>
+            body{padding:2em;}
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: red;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background:lightcoral;
+                padding: 10px;
+            }
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+            .mainContentItem{
+                text-align: left;
+                background: blue;
+            }
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: lightgray;
+            }
+            .sideBarLeftItem{background: gold;}
+            .sideBarRightItem{background: hotpink;}
+            .sideBarItem{ flex:1 0 0; border: 0px solid greenyellow;}
+            .mainContentItem{flex: 3 0px; }
+            .sideBarLeftItem{order: 1;}
+            .mainContentItem{order: 2;}
+            .sideBarRightItem{order: 3;}
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>Header- Sample FlexBox Example</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First Article</h2>
+                    <p>Paragliding is the recreational and competitive adventure sport of flying paragliders: 
+                        lightweight, free-flying, foot-launched glider aircraft with no rigid primary structure. 
+                        The pilot sits in a harness or lies supine in a coccoon-like 'speed bag' suspended below a fabric wing.</p>
+                </article>
+                <article>
+                    <h2>Second Article</h2>
+                    <p>Scuba diving is a mode of underwater diving where the diver uses a self-contained underwater breathing apparatus 
+                        (scuba), which is completely independent of surface supply, to breathe underwater</p>
+                </article>
+                <article>
+                    <h2>Third Article</h2>
+                    <p>Rafting and white water rafting are recreational outdoor activities which use an 
+                        inflatable raft to navigate a river or other body of water. </p>
+                    <p>This is often done on whitewater or different degrees of rough water.
+                         Dealing with risk and the need for teamwork is often a part of the experience.</p>
+                </article>
+            </section>
+            <SideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></SideBar>
+            <SideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></SideBar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body> 
+</html>
